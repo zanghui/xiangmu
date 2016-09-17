@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/style05.css"/>
+		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="../js/myhave.js"></script>
+	</head>
+	<body>
+		<div class="sl_sitenav">
+			<div class="sl_sitenav_bd clearfix">
+				<div class="loginReg" id="loginReg" style="display: ">
+					<span class="login">
+						您好，欢迎来到飞虎乐购！
+						<a href="html/denglu.html">安全登录</a>
+					</span>
+					<span class="reg">
+						还没加入我们？
+						<a href="html/zhuce.html">免费注册</a>
+					</span>
+				</div>
+				<div class="quickmenu">
+					<div class="myacount" id="Jmyacount">
+						<div class="menu">
+							<a href="#" class="menu_hd" >
+	                        	我的账户
+	                        	<b></b>
+	                        	<span></span>
+							</a>
+		                    <ul class="menu_bd">
+		                        <li><a href="#">账户首页</a></li>
+		                        <li><a href="#">我的收藏</a></li>
+		                        <li><a href="#">我的订单</a></li>
+		                    </ul>
+
+						</div>	
+					</div>
+					<div class="help" id="Jhelp"> 
+		                <div class="menu"> 
+			             	<a href="#" class="menu_hd">
+			             		网站导航
+			             		<b></b>
+			             		<span></span>
+			             		</a>
+			                <ul class="menu_bd ">
+			                    <li><a href="#">帮助中心</a></li>
+			                    <li><a href="#">联系客服</a></li>
+			                    <li><a href="#">常见问题</a></li>
+			                </ul>
+		                </div>
+		            </div>
+					<div class="collection">
+                        <a href="#" id="JaddFavorites">加入收藏</a>
+                        <b></b>
+					</div>                
+                    <div class="tel">
+                        400 883 6900
+                        <b></b>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="tubiao">
+			<h2>
+				<a class="fhlg" title="飞虎乐购" href="../index.html"><img src="../img/fhlg.jpg"/></a>
+			</h2>
+			<ul class="xinxi">
+				<li>我的购物车</li>
+				<li>确认订单信息</li>
+				<li>成功提交订单</li>
+			</ul>
+		</div>
+		<div class="things">
+			我挑选的商品
+		</div>
+		<div class="kong" id="kong01">
+			<ul class="first">
+					<li class="xuan"><input type="checkbox"/>全选</li>
+					<li class="shopname">飞虎自营商品</li>
+					<li class="thingsname">商品名称</li>
+					<li class="thingsnum">商品数量</li>
+					<li class="thingspic">商品单价</li>
+					<li class="thingsadd">商品总价</li>
+					<li class="oprate">操作</li>
+			</ul>
+			<ul class="first_02">
+					<li class="xuan"><input type="checkbox"/></li>
+					<li class="shopname"><img src="../img/mid.jpg"></li>
+					<li class="thingsname">Lux-women-海南黄金木手链-财源广进15mm</li>
+					<li class="thingsnum"><b>1</b><em class="jia">﹢</em><em class="jian">﹣</em></li>
+					<li class="thingspic">¥99</li>
+					<li class="thingsadd">¥<em>99</em></li>
+					<li class="oprate"><span>删除</span><span>收藏</span></li>
+			</ul>
+			<div class="add_pice">
+				<p>不同商家商品无法合并订单购买，请分别结算。</p>
+				<p class="add_pice01">总金额：<span>¥ <em>99</em> </span></p>
+			</div>
+		</div>
+		<div class="kong" id="kong02" style="display: none;line-height: 227px;text-align: center;">
+			亲！您的购物车还没有任何商品哦
+		</div>
+		<div class="clear_gou">
+			
+			<span class="clear_gou01">继续购物</span>
+			<span class="clear_gou02">去结算</span>
+		</div>
+		<div class="footer_f">
+				<ul class="footer_nav">
+					<li><a title="常见问题" href="#">常见问题</a></li>
+					<li><a title="法律说明" href="#">法律说明</a></li>
+					<li><a title="联系客服" href="#">联系客服</a></li>
+					<li><a title="新闻中心" href="#">新闻中心</a></li>
+					<li class="last"><a title="意见箱" href="#">意见箱</a></li>
+				</ul>
+				<p><span>增值业务经营许可证：<a href=" http://www.efeihu.com/Pages/Customer/ICP.aspx" target="_blank">粤B2-20130551</a></span><i>网站备案：<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">粤ICP备13049812</a></i><span>食品流通许可证：SP4403112014007826</span></p>
+				<p>食品流通许可证：SP1103021110002595</p>
+				<p> Copyright © 2009-2016 深圳富金机网络科技有限公司.All Rights Reserved</p>
+			</div>
+			<script>
+				$(function(){
+					$(".oprate span").click(function(){
+						$("#kong01").hide();
+						$(".clear_gou").hide();
+						$("#kong02").show();
+					})
+						$(".jia").click(function(){
+					var n = $(".thingsnum b").html();
+					    n++;
+						var k = n*99
+						$(".thingsnum b").html(n);
+						$(".thingsadd em").html(k);
+						$(".add_pice01 em").html(k);
+					
+				})
+				$(".jian").click(function(){
+					var j = $(".thingsnum b").html();
+						j--;
+						var x = j*99;
+					var t = $(".thingsadd em").html();
+					var h = $(".add_pice01 em").html();
+						$(".thingsnum b").html(j)
+						$(".thingsadd em").html(x)
+						$(".add_pice01 em").html(x)
+					
+				})
+				
+				})
+			</script>
+	</body>
+</html>

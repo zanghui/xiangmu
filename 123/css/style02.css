@@ -1,0 +1,397 @@
+html, body, h1, h2, h3, h4, h5, h6, hr, div, p, dl, dt, dd, ul, ol, li, form, fieldset, legend, button, input, textdevision, select, table, tr, th, td,  address, em, var{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration:none ;}
+img{display: block;border:0;}
+i,em{font-style: normal;}
+body{font-size:12px;font-family: "微软雅黑";}
+.sl_sitenav {
+			width: 100%;
+			height: 29px;
+			position: relative;
+			z-index: 990;
+			background: #eee;
+			border-bottom: solid 1px #ddd;
+}
+.sl_sitenav_bd {
+				width: 981px;
+				height: 28px
+				display: block;
+				margin: 0 auto;
+				clear: both;
+				position: relative
+}
+.sl_sitenav .loginReg {
+				width: 360px;
+				padding-top: 2px;
+				line-height: 25px;
+				float: left;
+				margin-left: 15px;
+				
+}
+.sl_sitenav .login,.sl_sitenav .reg{
+				font-size: 12px;
+				color: #666;
+}
+.sl_sitenav .loginReg .login a, .sl_sitenav .loginReg .reg a {
+				padding: 0 4px;
+				color: #00f;
+				text-decoration: underline;
+}
+.sl_sitenav .loginReg .login a:hover, .sl_sitenav .loginReg .reg a:hover {
+
+				color: #f00;
+}
+.sl_sitenav .quickmenu {
+				width: 367px;
+				height: 25px;
+				line-height: 25px;
+				position: absolute;
+				right: 0;
+				top: 2px;
+				
+}
+.sl_sitenav .myacount {
+				float: left;
+				width: 73px;
+				margin-right: 8px;
+}
+.sl_sitenav .myacount .menu {
+				position: relative;
+				height: 25px;
+				padding: 0 0 0 5px;
+				width: 68px;
+				z-index: 992;
+				
+}
+.sl_sitenav .myacount .menu a{
+				font-size: 12px;
+				color: #333;
+				text-decoration: underline;
+}
+.sl_sitenav .myacount .menu_hd b {
+				position: absolute;
+				right: 4px;
+				top: 10px;
+				display: block;
+				width: 10px;
+				height: 7px;
+				overflow: hidden;
+				cursor: pointer;
+				background: url(../img/sitenav.png) no-repeat 0 0px;
+				
+}
+
+.sl_sitenav .myacount .menu_bd {
+				display: none;
+				border: 1px solid #c7012c;
+				background: #FFF;
+				border-top-width: 0;
+				width: 71px;
+				position: absolute;
+				top: 25px;
+				left: 0px;
+}
+.sl_sitenav .myacount .menu_bd a{
+				width: 66px;
+				display: block;
+				padding-left: 5px; 
+				color:#666;
+				text-decoration: none;
+				
+}
+.sl_sitenav .myacount .menu_bd a:hover{
+				text-decoration: underline;
+				background: #ffffcc url(../img/bg.png) no-repeat -201px -518px;
+}
+.sl_sitenav .myacount .menu_bd .last:hover{
+				text-decoration: underline;
+				background: #ffffcc url(none);
+}
+.sl_sitenav .help {
+				width: 56px;
+				float: left;
+				position: relative;
+				margin-right: 8px;
+}
+.sl_sitenav .help .menu {
+				position: relative;
+				height: 25px;
+				width: 56px;
+				z-index: 992;
+}
+.sl_sitenav .help .menu a{
+				font-size: 12px;
+				color: #333;
+				text-decoration: underline;
+}
+.sl_sitenav .help .menu a:hover{
+				color: #00f;
+}
+.sl_sitenav .help .menu span{
+				position: absolute;
+				right: 0px;
+				top: 7px;
+				display: block;
+				width: 1px;
+				height: 12px;
+				overflow: hidden;
+				cursor: pointer;
+				background: url(../img/sitenav.png) no-repeat -30px 0px;
+				
+}
+.sl_sitenav .collection {
+				float: left;
+				width: 72px;
+				position: relative;
+				padding-left: 24px;
+}
+.sl_sitenav .collection a{
+				font-size: 12px;
+				color: #333;
+				text-decoration: underline;
+}
+.sl_sitenav .collection a:hover{
+				color: #00f;
+}
+.sl_sitenav .collection b {
+				position: absolute;
+				left: 10px;
+				top: 9px;
+				display: block;
+				width: 12px;
+				height: 12px;
+				overflow: hidden;
+				background: url(../img/sitenav.png) no-repeat -40px 0;
+}
+.sl_sitenav .tel {
+				float: right;
+				width: 96px;
+				height: 27px;
+				position: relative;
+				font-weight: bold;
+				font-family: simsun;
+				line-height: 26px;
+				padding-left: 22px;
+}
+.sl_sitenav .tel b {
+				position: absolute;
+				left: 10px;
+				top: 8px;
+				display: block;
+				width: 14px;
+				height: 14px;
+				overflow: hidden;
+				background: url(../img/sitenav.png) no-repeat -60px 0;
+}
+.main{			
+				width: 100%;
+				height: 582px;
+				background: url(../img/ground.jpg) repeat-x;
+}
+.main_ground{
+				width: 981px;
+				height: 465px;
+				position: relative;
+				background: url(../img/login_bg.jpg) no-repeat 15px 0;
+				margin: 0 auto;
+				border-bottom: 1px solid #ddd;
+}
+.login_logo{
+				width: 167px;
+				height: 95px;
+				margin-left: 15px;
+}
+.login_logo a{
+				display: block;
+				width: 167px;
+				height: 95px;
+}
+.login_box {
+				width: 328px;
+				height: 350px;
+				border: 2px solid #EEDFBB;
+				background: #fff;
+				position: absolute;
+				right: 191px;
+				top: 47px;
+				
+}
+.login_box .title {
+				height: 31px;
+				line-height: 31px;
+				background: url(../img/titleBG.png) repeat-x;
+}
+.login_box .title h2 {
+				font-weight: bold ;
+				font-size: 15px; 
+				padding-left: 10px;
+				color: #666;
+}
+.login_box .boxMain {
+				height: 310px;
+				border: 1px solid #C7012C;
+				padding: 10px 0 0 10px;
+}
+.login_box .boxMain .tips{
+				width: 294px;
+				height: 22px;
+				border: 1px solid #ccc;
+				font-size: 12px;
+				color: #666;
+				padding: 8px 0 0 10px;
+				background: #fafafa;
+}
+.login_box .boxMain .name{
+				width: 272px;
+				height: 24px;
+				line-height: 24px;
+				margin: 10px 0 0 20px;
+				font-size: 12px;
+				color: #666;
+}
+.login_box .boxMain .txt{
+				width: 220px;
+				height: 22px;
+				border: 1px solid #ccc
+}
+.login_box .boxMain .wang{
+				display: block;
+				margin: 9px 0 0 70px;
+				text-decoration: underline;
+}
+.login_box .boxMain .other{
+				width: 314PX;
+				height: 175px;
+				border-top: 1px dashed #ccc;
+				margin-top: 10px;
+				
+}
+.login_box .boxMain .other span{
+				width: 60px;
+				height: 165px;
+				display: block;
+				margin:10px 0 0 8px;
+				color: #666;
+				font-size: 12px;
+				float: left;
+}
+.login_box .boxMain .other .gong{
+				width: 245px;
+				height: 104px;
+				float: left;			
+}
+.login_box .boxMain .other li{
+				float: left;
+				height: 32px;
+				line-height: 32px;
+				margin: 0 8px;
+}
+.login_box .boxMain .other img{
+				float: left;
+				margin-top:8px;
+}
+.login_box .boxMain a{
+			text-decoration: underline;
+			color: #3f70fc;	
+}
+.login_box .boxMain a:hover{
+			color: #c7012c;
+}
+.login_box .boxMain .other .denglu{
+			float: left;
+			margin-top: 6px;
+			width: 140px;
+			height: 40px;
+			display: block;
+			background: url(../img/sitenav.png) no-repeat 0 -60px;
+}
+.login_box .boxMain .other .denglu:hover{
+			background: url(../img/sitenav.png) no-repeat 0 -100px;
+}
+.login_box .boxMain .other .zhuce{
+			display: block;
+			margin: 6px 0 0 15px;
+			float: left;
+			height: 40px;
+			line-height: 40px;
+			
+}
+.footer_f{
+				width: 981px;
+				height: 106px;
+				padding-top: 10px;
+				margin: 0 auto;
+				color: #666;
+				position: relative;
+}
+.footer_f .footer_nav{
+				width: 340px;
+				height: 12px;
+				margin-bottom: 3px;
+				
+}
+.footer_f .footer_nav li{
+				float: left;
+				width: 60px;
+				height: 12px;
+				line-height: 12px;
+				text-align: center;
+				border-right: 1px solid #999;
+				
+				
+}
+.footer_f .footer_nav .last{
+				border: 0;
+}
+.footer_f .footer_nav li a{
+				font-size: 12px;
+				color: #00f;
+}
+.footer_f .footer_nav li a:hover{
+				text-decoration: underline;
+				
+}
+.footer_f p{	
+				
+				height: 18px;
+				line-height: 18px;
+				font-size: 12px;
+				color: #999;
+			
+}
+.footer_f p span{
+				float: left;
+				display: block;
+				height: 18px;
+				line-height: 18px;
+				font-size: 12px;
+				color: #999;
+				
+}
+.footer_f p a{
+				color: #a599b2;
+}
+
+.footer_f p i{
+			float: left;
+			width: 160px;
+			height:12px;
+			line-height: 12px;
+			display: block;
+			border-left: 1px solid #b299b2;
+			border-right: 1px solid #b299b2;
+			margin: 4px 5px 0 5px;
+			padding:0 6px;
+}
+.footer_f .guanli{
+			width: 53px;
+			height: 72px;
+			position: absolute;
+			right: 0;
+			top: 5px;
+}
+
+.footer_f .guanli img{
+			width: 53px;
+			height: 72px;
+}

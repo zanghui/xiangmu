@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/style01.css"/>   
+	</head>
+	<body>
+		<div class="sl_sitenav">
+			<div class="sl_sitenav_bd clearfix">
+				<div class="loginReg" id="loginReg" style="display: ">
+					<span class="login">
+						您好，欢迎来到飞虎乐购！
+						<a href="denglu.html" target="_self">安全登录</a>
+					</span>
+					<span class="reg">
+						还没加入我们？
+						<a href="zhuce.html" target="_self">免费注册</a>
+					</span>
+				</div>
+				<div class="quickmenu">
+					<div class="myacount" id="Jmyacount">
+						<div class="menu">
+							<a href="#" class="menu_hd" >
+	                        	我的账户
+	                        	<b></b>
+							</a>
+		                    <ul class="menu_bd">
+		                        <li><a href="#">账户首页</a></li>
+		                        <li><a href="#">我的收藏</a></li>
+		                        <li><a class="last" href="#">我的订单</a></li>
+		                    </ul>
+
+						</div>	
+					</div>
+					<div class="help" id="Jhelp"> 
+		                <div class="menu"> 
+			             	<a href="#" class="menu_hd">
+			             		帮助中心
+			             		<span></span>
+			                </a>
+		                </div>
+		            </div>
+					<div class="collection">
+                        <a href="#" id="JaddFavorites">网站体验反馈</a>
+                        <b></b>
+					</div>                
+                    <div class="tel">
+                        400 883 6900
+                        <b></b>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main_ground">
+				<div class="login_logo">
+					<a href="../index.html" target="_self"><img src="../img/login_logo.jpg"/></a>
+				</div>
+			<div class="login_box">
+		    <div class="title">
+		        <h2>
+		            用户注册</h2>
+		    </div>
+		    <div class="boxMain">
+        <div class="tips">
+            <b>您尚未注册：</b>请填写注册信息，带有<em>*</em>号的为必填项。
+        </div>
+        <table width="100%" border="0" cellspacing="2" cellpadding="0">
+           
+                <tr>
+                    <td width="17%" height="30" align="right">
+                        		<p>
+                          用户名：</p>
+                        <span>*</span>
+                    </td>
+                    <td width="33%">
+                        <input  type="text" class="txt" id="txt01" maxlength="20" />
+                    </td>
+                    <td width="50%">
+                        <div class="text_tips" style="display: none;">
+                            4-20位字符，可由英文、数字组成
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">
+                        <p>
+                            密码：</p>
+                        <span>*</span>
+                    </td>
+                    <td>
+                        <input type="password" class="txt" id="txt02" maxlength="16" />
+                    </td>
+                    <td>
+                        <div class="text_tips" style="display: none;">
+                            6-16位，可由英文、数字、特殊字符组成
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">
+                        <p>
+                            确认密码：</p>
+                        <span>*</span>
+                    </td>
+                    <td>
+                        <input type="password" class="txt" id="txt03" maxlength="16" />
+                    </td>
+                    <td>
+                        <div class="text_tips" style="display: none;">
+                        	请再次输入密码
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">
+                        <p>
+                            邮箱：</p>
+                        <span>*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" id="txt04" maxlength="50" />
+                    </td>
+                    <td>
+                        <div class="text_tips" style="display: none;">
+                                                                                  请输入邮箱，用来找回密码、接受订单通知等
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">
+                        <p>
+                            推荐人：</p>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" id="txt05" maxlength="20" />
+                    </td>
+                    <td>
+                        <div class="text_tips" style="display: none;">
+                                                                                 推荐人用户名，区分大小写
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">
+                        <p>
+                            活动代码：</p>
+                    </td>
+                    <td>
+                        <input type="text" class="txt" id="txt06"/>
+                    </td>
+                    <td>
+                        <div class="text_tips" style="display: none;">
+                                                                                请输入活动代码
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">
+                        <p>
+                            验证码：</p>
+                        <span>*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="txt txt_name" />
+                    </td>
+                    <td>
+                        <div class="text_tips" style="display: none;">
+                                                                                请输入图片中的数字
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <img src="http://www.gou.com/verifyImg.aspx?r=0.572413208389819" alt="" width="63" height="20" onclick="this.src='http://www.gou.com/verifyImg.aspx?r='+Math.random()">
+                          	<a style="cursor: pointer" class="checkcode">换张图</a>
+                            
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30">
+                        &nbsp;
+                    </td>
+                    <td colspan="2">
+                        <div class="agreement_box">
+                            <input name="checkbox" type="checkbox" id="checkbox" >
+                            我已阅读并同意 <a href="http://www.efeihu.com/Pages/MemberCenter/Agreement.aspx" id="ctl00_ContentPlaceHolder1_InternetRegister1_lblagreementlink" target="_blank">飞虎乐购用户协议</a>
+                        </div>
+                        <div class="fh_agreement">
+                            请阅读并同意飞虎乐购用户协议</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <a style="cursor: pointer" class="btn_register" >
+                            安全登录<b></b></a>
+                    </td>
+                    
+                </tr>
+           
+        </table>
+    </div>
+</div>
+</div>  
+			<div class="footer_f">
+				<ul class="footer_nav">
+					<li><a title="常见问题" href="#">常见问题</a></li>
+					<li><a title="法律说明" href="#">法律说明</a></li>
+					<li class="last"><a title="联系客服" href="#">联系客服</a></li>
+				</ul>
+				<p><span>增值业务经营许可证：<a href=" http://www.efeihu.com/Pages/Customer/ICP.aspx" target="_blank">粤B2-20130551</a></span><i>网站备案：<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">粤ICP备13049812</a></i><span>食品流通许可证：SP4403112014007826</span></p>
+				<p>食品流通许可证：SP1103021110002595</p>
+				<p> Copyright © 2009-2016 深圳富金机网络科技有限公司.All Rights Reserved</p>
+				<div class="guanli">
+					<a title="深圳市市场监督管理局企业主体身份公示" href="http://szcert.ebs.org.cn/b692c33f-1d1d-48be-a629-1b69684fcfd5" target="_blank"><img src="../img/govIcon.gif"/></a>
+				</div>
+			</div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+<script type="text/javascript">
+$(function(){
+		$(".myacount").hover(function(){
+			$(this).css("background","#c7012c").find(".menu_hd").css({"color":"#fff","textDecoration":"none"});
+			$(this).find("b").css("backgroundPosition","-13px 0px");
+			$(".menu_bd").css("display","block")
+		},
+		function(){
+			$(".myacount").css("background","#eee").find(".menu_hd").css({"color":"#333","textDecoration":"underline"});
+			$(".myacount").find("b").css("backgroundPosition","0px 0px");
+			$(".menu_bd").css("display","none")
+		
+		})
+//		$(".txt").focus(function(){
+//			console.log($(this)
+//		})
+		function setcookie(name,value,idate){
+			var date = new Date();
+			date.setDate(date.getDate()+idate);
+			document.cookie = name + "="+ value +";expires="+ idate;
+		}
+			var text = $("#txt01");
+			var mima = $("#txt02");
+			var que = $("#txt03");
+			var emal = $("#txt04");
+			var tuijian = $("#txt05");
+			var activate = $("#txt06");
+			var ma = $("#txt07");
+			var reg = /^[a-zA-Z][a-zA-Z0-9_]{3,19}$/;
+			var obt = true;
+		text.focus(function(){
+			text.parent().next().find(".text_tips").show();
+			
+		}).blur(function(){
+			if(text.val().length>3 && text.val().length<21){
+				if(reg.test(text.val())){
+					
+					text.parent().next().find(".text_tips").hide();
+					obt = true;
+				}else{
+					
+					console.log(text.parent().next().find(".text_tips").html())
+					obt = false;
+				}
+			}
+			
+			
+		})
+		
+			
+		
+			
+		
+		
+		$(".btn_register").click(function(){
+//			console.log(text.val());
+			setcookie("zhang",text.val(),7);
+			setcookie("hui",mima.val(),7)
+			window.location.href = "denglu.html"
+		})
+		$(".checkcode").click(function(){
+			$("td img").attr("src",'http://www.gou.com/verifyImg.aspx?r='+Math.random())
+		})
+})
+
+
+	
+</script>
+
+</body>
+</html>

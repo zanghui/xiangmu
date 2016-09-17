@@ -1,0 +1,494 @@
+html, body, h1, h2, h3, h4, h5, h6, hr, div, p, dl, dt, dd, ul, ol, li, form, fieldset, legend, button, input, textdevision, select, table, tr, th, td,  address, em, var{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration:none ;}
+img{display: block;border:0;}
+i,em{font-style: normal;}
+b{font-weight: normal;}
+body{font-size:12px;font-family: "微软雅黑";}
+.sl_sitenav {
+			width: 100%;
+			height: 29px;
+			position: relative;
+			z-index: 990;
+			background: url(../img/jianbian.jpg) repeat-x;
+			border-bottom: solid 1px #ccc;
+}
+.sl_sitenav_bd {
+				width: 1200px;
+				display: block;
+				margin: 0 auto;
+				clear: both;
+				position: relative
+}
+.sl_sitenav .loginReg {
+				width: 360px;
+				padding-top: 2px;
+				line-height: 25px;
+				float: left;
+				
+}
+.sl_sitenav .login,.sl_sitenav .reg{
+				font-size: 12px;
+				color: #666;
+}
+.sl_sitenav .loginReg .login a, .sl_sitenav .loginReg .reg a {
+				padding: 0 4px;
+				color: #0066ff;
+}
+.sl_sitenav .loginReg .login a:hover, .sl_sitenav .loginReg .reg a:hover {
+
+				color: #f00;
+}
+.sl_sitenav .quickmenu {
+				width: 341px;
+				float: right;
+				padding-top: 2px;
+				line-height: 25px;
+				font-size: 12px;
+				color: #333;
+}
+.sl_sitenav .myacount {
+				float: left;
+				width: 82px;
+				margin-right: 8px;
+}
+.sl_sitenav .myacount .menu {
+				position: relative;
+				height: 25px;
+				padding: 0 0 0 10px;
+				width: 70px;
+				z-index: 992;
+				
+}
+.sl_sitenav a{
+				color: #333;
+}
+.sl_sitenav .myacount .menu_hd b {
+				position: absolute;
+				right: 6px;
+				top: 10px;
+				display: block;
+				width: 10px;
+				height: 5px;
+				overflow: hidden;
+				cursor: pointer;
+				background: url(../img/tag.jpg) no-repeat 0 0px;
+				
+}
+.myacount .menu_hd span {
+				position: absolute;
+				right: -2px;
+				top: 8px;
+				display: block;
+				width: 2px;
+				height: 10px;
+				overflow: hidden;
+				background: url(../img/fen.jpg) no-repeat;
+}
+.sl_sitenav .myacount .menu_bd {
+				display: none;
+				border: 1px solid #CCC;
+				background: #FFF;
+				border-top-width: 0;
+				width: 60px;
+				padding: 0 10px;
+				position: absolute;
+				top: 25px;
+				left: -1px;
+}
+
+.sl_sitenav .myacount .menu_bd a:hover{
+				color:#f00;
+}
+.sl_sitenav .help {
+				width: 86px;
+				float: left;
+				position: relative;
+}
+.sl_sitenav .help .menu {
+				position: relative;
+				height: 25px;
+				padding: 0 0 0 10px;
+				width: 70px;
+				z-index: 992;
+}
+.sl_sitenav .help .menu_hd b {
+				position: absolute;
+				right: 6px;
+				top: 10px;
+				display: block;
+				width: 10px;
+				height: 5px;
+				overflow: hidden;
+				background: url(../img/tag.jpg) no-repeat 0 0px;
+				cursor: pointer;
+				
+}
+.sl_sitenav .help .menu_hd span {
+				position: absolute;
+				right: -2px;
+				top: 8px;
+				display: block;
+				width: 2px;
+				height: 10px;
+				overflow: hidden;
+				background: url(../img/fen.jpg) no-repeat;
+}
+.sl_sitenav .help .menu_bd {
+				display: none;
+				border: 1px solid #CCC;
+				background: #FFF;
+				border-top: 0;
+				width: 60px;
+				padding: 0 10px;
+				position: absolute;
+				top: 25px;
+				left: -1px;
+}
+.sl_sitenav .help .menu_bd a:hover{
+				color:#f00;
+}
+.sl_sitenav .collection {
+				float: left;
+				width: 66px;
+				position: relative;
+}
+.sl_sitenav .collection b {
+				position: absolute;
+				right: 6px;
+				top: 8px;
+				display: block;
+				width: 2px;
+				height: 10px;
+				overflow: hidden;
+				background: url(../img/fen.jpg) no-repeat;
+}
+.sl_sitenav .tel {
+				float: right;
+				text-align: right;
+				position: relative;
+				padding-left: 15px;
+				font-weight: bold;
+				font-family: simsun;
+				line-height: 26px;
+}
+.sl_sitenav .tel b {
+				position: absolute;
+				left: 0px;
+				top: 7px;
+				display: block;
+				width: 10px;
+				height: 10px;
+				overflow: hidden;
+				background: url(../img/tel.jpg) no-repeat;
+}
+.tubiao{
+				width: 1200px;
+				height: 100px;
+				margin: 0 auto;
+}
+.tubiao .fhlg{
+				width: 207px;
+				height: 67px;
+				float: left;
+				display: block;
+				margin: 14px 0 0 17px;
+}
+.tubiao .xinxi{
+				width: 636px;
+				height: 40px;
+				float: left;
+				margin: 35px 0 0 120px;
+				background: url(../img/cart32.png) no-repeat 0 0;
+}
+.tubiao .xinxi li{
+				width: 212px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				float: left;
+				color: #fff;
+				font-size: 15px;
+}
+.things{
+				height: 22px;
+				width: 1200px;
+				line-height: 22px;
+				font-size: 14px;
+				color: #000;
+				
+				margin: 0 auto;
+}
+.kong{
+				width: 1198px;
+				min-height: 227px;
+				margin: 15px auto 0;
+				border: 1px solid #ddd;
+				border-top: 2px solid #C7012C;
+}
+.kong .first{
+				width: 1198px;
+				 height: 71px;
+				 border-bottom: 1px solid #ddd;
+				 
+}
+
+.kong .first .xuan{
+				float: left;
+				width: 50px;
+				height: 40px;
+				border-right: 1px solid #ddd;
+				padding: 30px 0 0 10px;
+}
+.kong .first .shopname{
+	    		float: left;
+				width: 240px;
+				height: 60px;
+				padding-top: 11px;
+				text-align: center; 
+				color: #C7012C;
+}
+.kong .first .thingsname{
+				width: 352px;
+				height: 60px;
+				float: left;
+				padding-top: 11px;
+				text-align: center; 
+
+}
+.kong .first .thingsnum{
+				width: 162px;
+				height: 60px;
+				float: left;
+				padding-top: 11px;
+				text-align: center; 
+
+}
+.kong .first .thingspic{
+				width: 139px;
+				height: 60px;
+				float: left;
+				padding-top: 11px;
+				text-align: center; 
+}
+.kong .first .thingsadd{
+				width: 140px;
+				height: 60px;
+				float: left;
+				padding-top: 11px;
+				text-align: center; 
+}
+.kong .first .oprate{
+				width: 88px;
+				height: 60px;
+				float: left;
+				padding-top: 11px;
+				padding-left: 15px;
+
+}
+.kong .first_02{
+				width: 1198px;
+				 height: 99px;
+				 border-bottom: 1px solid #ddd;
+				 
+}
+.kong .first_02 li{
+				float: left;
+				height: 99px;
+				
+}
+.kong .first_02 .xuan{
+				float: left;
+				width: 37px;
+				height: 56px;
+				border-right: 1px solid #ddd;
+				padding: 43px 0 0 23px;
+}
+.kong .first_02 .shopname{
+				width: 175px;
+				height: 88px;
+				padding:11px 0 0 65px;
+
+}
+.kong .first_02 .shopname img{
+				width: 75px;
+				height: 75px;
+}
+.kong .first_02 .thingsname{
+				width: 352px;
+				height: 77px;
+				padding-top: 22px
+
+}
+.kong .first_02 .thingsnum{
+				width: 70px;
+				height: 81px;
+				padding: 18px 36px 0 56px;
+ 
+
+}
+.kong .first_02 .thingsnum b{
+				float: left;
+				width: 52px;
+				height: 19px;
+				line-height: 19px;
+				text-align: center;
+				border: 1px solid #ddd;
+				display: block;
+}
+.kong .first_02 .thingsnum em{
+				float: left;
+				width: 12px;
+				height: 8px;
+				border: 1px solid #ddd;
+				display: block;
+				line-height: 8px;
+				text-align: center;
+				cursor: pointer;
+}
+.kong .first_02 .thingspic{
+				width: 139px;
+				height: 77px;
+				padding-top: 22px;
+				text-align: center; 
+}
+.kong .first_02 .thingsadd{
+				width: 140px;
+				height: 77px;
+				padding-top: 22px;
+				text-align: center; 
+}
+.kong .first_02 .oprate{
+				width: 88px;
+				height: 99px;
+				padding-left: 15px;
+
+}
+
+.kong .first_02 .oprate span{
+				display: block;
+				color: #1c459d;
+				margin-top: 20px;
+				cursor: pointer;
+}
+
+
+.kong .first_02 .oprate span:hover{
+				text-decoration: underline;
+}
+.kong .add_pice{
+				width: 1198px;
+				height: 54px;
+				
+}
+.kong .add_pice p{
+				width: 254px;
+				height: 54px;
+				line-height: 54px;
+				color: #C7012C;
+				float: left;
+}
+.kong .add_pice .add_pice01{
+				width: 150px;
+				height: 54px;
+				line-height: 54px;
+				font-size: 18px;
+				color: #666;
+				float: right;
+				
+}
+.kong .add_pice .add_pice01 span{
+				color: #C7012C;
+}
+.clear_gou{
+				width: 1200px;
+				height: 150px;
+				margin: 2px auto 0 ;
+}
+.clear_gou .clear_gou01{
+				float: left;
+				width: 109px;
+				height: 34px;
+				border: 1px solid #ddd;
+				line-height: 34px;
+				text-align: center;
+				display: block;
+				margin: 6px 0 0 877px;
+				background: #f9f9f9;
+				cursor: pointer;
+}
+.clear_gou .clear_gou01:hover{
+				color: #C7021C;
+				text-decoration: underline;
+}
+.clear_gou .clear_gou02{
+				float: left;
+				width: 190px;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				display: block;
+				margin-left: 20px;
+				background: #f87600;
+				cursor: pointer;
+				color: #fff;
+}
+.footer_f{
+				width: 1200px;
+				height: 104px;
+				margin: 0 auto;
+				
+}
+.footer_f .footer_nav{
+				width: 340px;
+				height: 12px;
+				line-height: 12px;
+}
+.footer_f .footer_nav li{
+				float: left;
+				width: 67px;
+				height: 12px;
+				text-align: center;
+				border-right: 1px solid #999;
+				
+}
+.footer_f .footer_nav .last{
+				border: 0;
+}
+.footer_f .footer_nav li a{
+				font-size: 12px;
+				color: #333;
+}
+.footer_f p{
+				height: 20px;
+				line-height: 20px;
+				font-size: 12px;
+				color: #999;
+				margin: 6px 0 0 10px;
+}
+.footer_f p span{
+				float: left;
+				display: block;
+				height: 20px;
+				line-height: 20px;
+				font-size: 12px;
+				color: #999;
+				
+}
+.footer_f p a{
+				color: #999;
+}
+.footer_f p a:hover{
+				color: #00f;
+}
+.footer_f p i{
+			float: left;
+			width: 160px;
+			height:12px;
+			line-height: 12px;
+			display: block;
+			border-left: 1px solid #b299b2;
+			border-right: 1px solid #b299b2;
+			margin: 4px 5px 0 5px;
+			padding:0 6px;
+}

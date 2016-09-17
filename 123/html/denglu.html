@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录页面</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/style02.css"/>
+		
+		
+	</head>
+	<body>
+		<div class="sl_sitenav">
+			<div class="sl_sitenav_bd clearfix">
+				<div class="loginReg" id="loginReg" style="display: ">
+					<span class="login">
+						您好，欢迎来到飞虎乐购！
+						<a href="denglu.html">安全登录</a>
+					</span>
+					<span class="reg">
+						还没加入我们？
+						<a href="zhuce.html" target="_self">免费注册</a>
+					</span>
+				</div>
+				<div class="loginReg" id="loginReg_logined" style="display: none">
+            	<span class="logined">亲爱的 <a id="loginReg_logined_name" href="#">
+                </a>
+                	欢迎回来！ <a id="loginReg_logined_black" href="#">[退出]</a></span>
+        		</div>
+
+				<div class="quickmenu">
+					<div class="myacount" id="Jmyacount">
+						<div class="menu">
+							<a href="#" class="menu_hd" >
+	                        	我的账户
+	                        	<b></b>
+							</a>
+		                    <ul class="menu_bd">
+		                        <li><a href="#">账户首页</a></li>
+		                        <li><a href="#">我的收藏</a></li>
+		                        <li><a class="last" href="#">我的订单</a></li>
+		                    </ul>
+
+						</div>	
+					</div>
+					<div class="help" id="Jhelp"> 
+		                <div class="menu"> 
+			             	<a href="#" class="menu_hd">
+			             		帮助中心
+			             		<span></span>
+			                </a>
+		                </div>
+		            </div>
+					<div class="collection">
+                        <a href="#" id="JaddFavorites">网站体验反馈</a>
+                        <b></b>
+					</div>                
+                    <div class="tel">
+                        400 883 6900
+                        <b></b>
+                    </div>
+				</div>
+			</div>
+		</div>
+<div class="main">
+			<div class="main_ground">
+				<div class="login_logo">
+					<a href="../index.html" target="_self"><img src="../img/login_logo.jpg"/></a>
+				</div>
+			<div class="login_box">
+		    <div class="title">
+		        <h2>
+		            用户登录</h2>
+		    </div>
+		    <div class="boxMain">
+		    	<div class="tips">
+		    		欢迎登陆飞虎乐购，享受您的购物之旅。
+		    	</div>
+		    	<div class="name" id="name">用户名：<input type="text" class="txt" /></div>
+		    	<div class="name" id="mima">密 &nbsp;&nbsp;码：<input type="password" class="txt" /></div>
+		    	<a class="wang" href="http://www.efeihu.com/Pages/MemberCenter/ForgotPwd.aspx" target="_blank">忘记密码？</a>
+		    	<div class="other">
+		    		<span>联合登陆：</span>
+		    		<ul class="gong">
+		    			<li><img src="../img/ico_alipay.gif"/><a href="">支付宝快捷登录</a></li>
+		    			<li><img src="../img/qq01.gif"/><a href="">QQ</a></li>
+		    			<li><img src="../img/weibo.gif"/><a href="">新浪</a></li>
+		    			<li><img src="../img/renren.gif"/><a href="">人人网</a></li>
+		    			<li><img src="../img/kaixin.gif"/><a href="">开心</a></li>
+		    			<li><img src="../img/yi.gif"/><a href="">网易</a></li>
+		    			<li><img src="../img/xunlei.gif"/><a href="">迅雷</a></li>
+		    			<li><img src="../img/ichinaMobile.jpg"/><a href="">139邮箱</a></li>
+		    		</ul>
+		    		<a class="denglu" href="#"></a>
+		    		<a class="zhuce" href="zhuce.html">免费注册</a>
+		    	</div>
+		    	
+		    		
+		    </div>
+    		</div>
+			</div>
+				<div class="footer_f">
+				<ul class="footer_nav">
+					<li><a title="常见问题" href="#">常见问题</a></li>
+					<li><a title="法律说明" href="#">法律说明</a></li>
+					<li class="last"><a title="联系客服" href="#">联系客服</a></li>
+				</ul>
+				<p><span>增值业务经营许可证：<a href=" http://www.efeihu.com/Pages/Customer/ICP.aspx" target="_blank">粤B2-20130551</a></span><i>网站备案：<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">粤ICP备13049812</a></i><span>食品流通许可证：SP4403112014007826</span></p>
+				<p>食品流通许可证：SP1103021110002595</p>
+				<p> Copyright © 2009-2016 深圳富金机网络科技有限公司.All Rights Reserved</p>
+				<div class="guanli">
+					<a title="深圳市市场监督管理局企业主体身份公示" href="http://szcert.ebs.org.cn/b692c33f-1d1d-48be-a629-1b69684fcfd5" target="_blank"><img src="../img/govIcon.gif"/></a>
+				</div>
+			</div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../js/myhave.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".myacount").hover(function(){
+			$(this).css("background","#c7012c").find(".menu_hd").css({"color":"#fff","textDecoration":"none"});
+			$(this).find("b").css("backgroundPosition","-13px 0px");
+			$(".menu_bd").css("display","block")
+		},
+		function(){
+			$(".myacount").css("background","#eee").find(".menu_hd").css({"color":"#333","textDecoration":"underline"});
+			$(".myacount").find("b").css("backgroundPosition","0px 0px");
+			$(".menu_bd").css("display","none")
+		
+		})
+//			var obt = true;
+		    var name = $("#name .txt");
+			var mi = $("#mima .txt");
+			function getcookie(name){
+				var str=document.cookie;
+				var arr=str.split("; ");
+				for(var i=0; i<arr.length;i++){
+					var arr2=arr[i].split("=");
+					if(arr2[0] == name){
+						return arr2[1];
+					}			
+				}
+				return "";
+			}
+			var zhang = getcookie("zhang");
+			var hui = getcookie("hui");
+		
+			
+			$(".denglu").click(function(){
+				if(name.val()==zhang && mi.val()==hui){
+					
+					 window.location.href="../index.html";
+//					$("#loginReg_logined").css("display","block");
+//					$("#loginReg_logined_name").html(zhang);
+//					$("#loginReg").css("display","none");
+//					
+				}else{
+					
+					$(".tips").html("信息有误");
+					$(".tips").css("color","#f00");
+				}
+				//if(name.val())
+//				console.log($("#name .txt").val())
+//				if($("#name .txt").val() == ""){
+//					$(".tips").html("用户名不存在");
+//					$(".tips").css("color","#f00");
+//					}
+//				else if($("#mima .txt").val() == ""){
+//					$(".tips").html("密码错误");
+//					$(".tips").css("color","#f00");
+//				}
+//				else {
+//					$(this).attr("href","../index.html")
+//				}
+				
+		})
+			
+	
+	})
+			
+	
+</script>
+
+
+	</body>
+</html>
